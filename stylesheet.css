@@ -57,6 +57,7 @@ button {
     box-shadow: 5px 10px 8px #888888;
     margin: 5px 5px;
     font-family: 'digital-7regular';
+    cursor: pointer;
 }
 
 .all-clear, .zero-btn {
@@ -71,12 +72,12 @@ button {
 
 button:hover {
     background-color: rgb(141, 141, 141);
-    transition: 0.7s;
+    transition: 0.3s;
 }
 
 .operator:hover, .equal-sign:hover, .all-clear:hover, .percentage:hover {
     background-color: darkorange;
-    transition: 0.7s;
+    transition: 0.3s;
 }
 
 @media all and (max-width: 1000px) {
