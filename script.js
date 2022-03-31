@@ -70,7 +70,7 @@ const calculate = () => {
             result = parseFloat(prevNumber) / parseFloat(currentNumber)
             break
         case '%':
-            result = parseFloat(prevNumber/100)
+            result = parseFloat(prevNumber) % parseFloat(currentNumber)
             break
         default:
             break
@@ -106,3 +106,21 @@ inputDecimal = (dot) => {
     currentNumber += dot
 }
 
+const deleteLast = document.querySelector('.delete')
+
+deleteLast.addEventListener('click', (event) => {
+    del()
+    updateScreen(currentNumber)
+})
+
+const del =  () => {
+    calculationOperator = ''
+
+    for(let i=0 ; i<currentNumber.length-1 ; i++){
+            calculationOperator += currentNumber[i]; 
+    }
+    currentNumber =  calculationOperator;
+    if(currentNumber.length === 0) {
+        currentNumber = '0'
+    }
+}
