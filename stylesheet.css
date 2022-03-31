@@ -31,7 +31,7 @@ body {
     border: none;
     padding: 0 20px;
     box-sizing: border-box;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'digital-7regular';
 }
 
@@ -60,11 +60,7 @@ button {
     cursor: pointer;
 }
 
-.all-clear, .zero-btn {
-    width: 52%;
-}
-
-.operator, .equal-sign, .all-clear, .percentage {
+.operator, .equal-sign, .all-clear, .delete {
     background-color: #F9D388;
     color: #374556;
     border: 0 solid #F9D388;
@@ -75,7 +71,7 @@ button:hover {
     transition: 0.3s;
 }
 
-.operator:hover, .equal-sign:hover, .all-clear:hover, .percentage:hover {
+.operator:hover, .equal-sign:hover, .all-clear:hover, .delete:hover {
     background-color: darkorange;
     transition: 0.3s;
 }
